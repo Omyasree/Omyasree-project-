@@ -1,0 +1,242 @@
+HTML Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShopEasy</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Product Section -->
+  <main>
+    <section class="product">
+      <div class="product-image">
+        <img src="product-image.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h1 class="product-name">Stylish Headphones</h1>
+        <p class="product-description">Experience crystal-clear sound with our stylish and comfortable headphones. Perfect for music lovers and audiophiles.</p>
+        <p class="product-price">$149.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p>"Fantastic quality and amazing sound!"</p>
+        <span>★★★★★</span>
+      </div>
+      <div class="review">
+        <p>"Comfortable and worth every penny."</p>
+        <span>★★★★☆</span>
+      </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h2>Related Products</h2>
+      <div class="product-card">
+        <img src="related1.jpg" alt="Related Product 1">
+        <p>Wireless Earbuds</p>
+        <span>$89.99</span>
+      </div>
+      <div class="product-card">
+        <img src="related2.jpg" alt="Related Product 2">
+        <p>Bluetooth Speaker</p>
+        <span>$59.99</span>
+      </div>
+      <div class="product-card">
+        <img src="related3.jpg" alt="Related Product 3">
+        <p>Noise-Canceling Headphones</p>
+        <span>$199.99</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 ShopEasy. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
+CSS Code
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Product Section */
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: #fff;
+  margin: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.product-name {
+  font-size: 2rem;
+  color: #333;
+}
+
+.product-description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+.add-to-cart {
+  background-color: #f39c12;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #e67e22;
+}
+
+/* Reviews Section */
+.reviews {
+  margin: 2rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.reviews h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.review {
+  margin-bottom: 1rem;
+}
+
+.review span {
+  color: #f39c12;
+}
+
+/* Related Products */
+.related-products {
+  margin: 2rem;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.related-products h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.product-card {
+  display: inline-block;
+  width: calc(33.333% - 1rem);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-card p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.product-card span {
+  color: #e74c3c;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
